@@ -1,4 +1,4 @@
-# Mars hover
+# Mars rover
 
 ###The problem:
 A team of robots is ready to explore Mars terrain.
