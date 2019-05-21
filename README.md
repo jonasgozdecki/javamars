@@ -1,8 +1,6 @@
-# The problem
+# Mars hover
 
-**[Jonas Gozdecki](https://github.com/jonasgozdecki/jgmars)**
-
-The problem:
+###The problem:
 A team of robots is ready to explore Mars terrain.
 The terrain to be explored is a retangle and must be explored in a such way that all cameras attached to each robot, together must get images of the  area to send back to Earth.
 
@@ -12,14 +10,14 @@ One valid robot position woud be (0, 0, N), this means that the robot is located
 To control each robot, NASA sends a simple string, that can contain letters ‘L’, ‘R’ and ‘M’. The letters ‘L’ and ‘R’ are 90 degrees rotation commands to left or right respectivelly. The letter ‘M’ is the command to send the robot one position forward.
 For instance: The command "MML" telling to the robot go from eg.: (0,0,N) to (0,2,W)
 
-Requirements:
+###Requirements:
 The terrain shoud be with 5x5 positions;
 The robot start at position (0,0,N);
 Should be possible to send a command to the robot respond with its actual position;
 The robot cannot move outside the specified area;
 The robot must not keep it's state;
 
-Testing:
+###Testing:
 Movement with rotarions to the right:
 Input: curl -s --request POST http://localhost:8080/rest/mars/MMRMMRMM
 Output: (2, 0, S)
