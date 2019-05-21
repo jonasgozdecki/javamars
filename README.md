@@ -22,18 +22,22 @@ Movement with rotarions to the right:
 Input: curl -s --request POST http://localhost:8080/rest/mars/MMRMMRMM  
 Output: (2, 0, S)
 <br/>
+
 Movement to the left:  
 Input: curl -s --request POST http://localhost:8080/rest/mars/MML  
 Output: (0, 2, W)
 <br/>
+
 Repeat it's position moving to the left:  
 Input: curl -s --request POST http://localhost:8080/rest/mars/MML  
 Output: (0, 2, W)
 <br/>
+
 Invalid command:  
 Input: curl -s --request POST http://localhost:8080/rest/mars/AAA  
 Output: 400 Bad Request
 <br>
+
 Invalid position:  
 Input: curl -s --request POST http://localhost:8080/rest/mars/MMMMMMMMMMMMMMMMMMMMMMMM  
 Output: 400 Bad Request  
